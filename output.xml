@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.11 on win32)" generated="20220401 23:25:42.818" rpa="false" schemaversion="2">
+<suite id="s1" name="Test Cases" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases">
+<suite id="s1-s1" name="TC10 Newsroom All Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC10_Newsroom_All_Test.robot">
+<test id="s1-s1-t1" name="ListenIt Test">
+<kw name="Open my browser" library="NewsroomPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:25:44.560" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:25:44.560" endtime="20220401 23:26:11.995"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:17.026" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:11.996" endtime="20220401 23:26:17.026"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:26:17.026" endtime="20220401 23:26:17.239"/>
+</kw>
+<status status="PASS" starttime="20220401 23:25:44.560" endtime="20220401 23:26:17.239"/>
+</kw>
+<kw name="Newsroom All" library="NewsroomPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:19.252" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:17.240" endtime="20220401 23:26:19.252"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${newsroom_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:26:19.253" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:26:19.252" endtime="20220401 23:26:19.771"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:21.780" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:19.772" endtime="20220401 23:26:21.780"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_all_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:26:21.781" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[1]'.</msg>
+<msg timestamp="20220401 23:26:27.101" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-85.png"&gt;&lt;img src="selenium-screenshot-85.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220401 23:26:27.665" level="FAIL">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[1]' not found.</msg>
+<status status="FAIL" starttime="20220401 23:26:21.780" endtime="20220401 23:26:27.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:26:27.665" endtime="20220401 23:26:27.665"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_post_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:26:27.665" endtime="20220401 23:26:27.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:26:27.665" endtime="20220401 23:26:27.665"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_twitter_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:26:27.665" endtime="20220401 23:26:27.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:26:27.665" endtime="20220401 23:26:27.665"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:26:17.240" endtime="20220401 23:26:27.666"/>
+</kw>
+<kw name="Close my browser" library="NewsroomPage">
+<status status="NOT RUN" starttime="20220401 23:26:27.666" endtime="20220401 23:26:27.667"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:25:44.560" endtime="20220401 23:26:27.667">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220401 23:25:42.916" endtime="20220401 23:26:27.669"/>
+</suite>
+<suite id="s1-s2" name="TC11 Newsroom Company" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC11_Newsroom_Company.robot">
+<test id="s1-s2-t1" name="ListenIt Test">
+<kw name="Open my browser" library="NewsroomPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:26:27.685" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:26:27.684" endtime="20220401 23:26:48.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:53.136" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:48.123" endtime="20220401 23:26:53.137"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:26:53.137" endtime="20220401 23:26:53.383"/>
+</kw>
+<status status="PASS" starttime="20220401 23:26:27.684" endtime="20220401 23:26:53.383"/>
+</kw>
+<kw name="Newsroom Company" library="NewsroomPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:55.398" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:53.385" endtime="20220401 23:26:55.398"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${newsroom_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:26:55.399" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:26:55.399" endtime="20220401 23:26:55.450"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:26:57.463" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:26:55.450" endtime="20220401 23:26:57.463"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Newsroom_company_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:26:57.464" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[2]'.</msg>
+<msg timestamp="20220401 23:27:14.959" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220401 23:27:14.961" level="FAIL">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[2]' not found.</msg>
+<status status="FAIL" starttime="20220401 23:26:57.463" endtime="20220401 23:27:14.961"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:14.961" endtime="20220401 23:27:14.961"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_post_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:14.961" endtime="20220401 23:27:15.033"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:15.033" endtime="20220401 23:27:15.033"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_facebook_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:15.033" endtime="20220401 23:27:15.033"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:15.033" endtime="20220401 23:27:15.033"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:26:53.384" endtime="20220401 23:27:15.034"/>
+</kw>
+<kw name="Close my browser" library="NewsroomPage">
+<status status="NOT RUN" starttime="20220401 23:27:15.034" endtime="20220401 23:27:15.034"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:26:27.684" endtime="20220401 23:27:15.035">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[2]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220401 23:26:27.671" endtime="20220401 23:27:15.037"/>
+</suite>
+<suite id="s1-s3" name="TC12 Newsroom Industry" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC12_Newsroom_Industry.robot">
+<test id="s1-s3-t1" name="Industry Test">
+<kw name="Open my browser" library="NewsroomPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:27:15.046" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:27:15.045" endtime="20220401 23:27:27.377"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:27:32.392" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:27:27.377" endtime="20220401 23:27:32.392"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:27:32.392" endtime="20220401 23:27:32.530"/>
+</kw>
+<status status="PASS" starttime="20220401 23:27:15.044" endtime="20220401 23:27:32.531"/>
+</kw>
+<kw name="Newsroom Industry" library="NewsroomPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:27:34.536" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:27:32.532" endtime="20220401 23:27:34.537"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${newsroom_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:27:34.539" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:27:34.538" endtime="20220401 23:27:34.617"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:27:36.623" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:27:34.618" endtime="20220401 23:27:36.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${industry_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:27:36.624" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[3]'.</msg>
+<status status="PASS" starttime="20220401 23:27:36.623" endtime="20220401 23:27:36.668"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:27:38.677" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:27:36.668" endtime="20220401 23:27:38.678"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_post_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:27:38.679" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[3]/div[1]/div[1]/img'.</msg>
+<status status="PASS" starttime="20220401 23:27:38.678" endtime="20220401 23:27:38.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:27:40.728" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:27:38.722" endtime="20220401 23:27:40.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_facebook_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:27:40.729" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[3]/div[2]/img'.</msg>
+<msg timestamp="20220401 23:27:40.979" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220401 23:27:40.980" level="FAIL">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[3]/div[2]/img' not found.</msg>
+<status status="FAIL" starttime="20220401 23:27:40.728" endtime="20220401 23:27:40.980"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:27:40.980" endtime="20220401 23:27:40.980"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:27:32.531" endtime="20220401 23:27:40.980"/>
+</kw>
+<kw name="Close my browser" library="NewsroomPage">
+<status status="NOT RUN" starttime="20220401 23:27:40.981" endtime="20220401 23:27:40.981"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:27:15.044" endtime="20220401 23:27:40.982">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[3]/div[2]/img' not found.</status>
+</test>
+<status status="FAIL" starttime="20220401 23:27:15.039" endtime="20220401 23:27:40.983"/>
+</suite>
+<suite id="s1-s4" name="TC13 Newsroom Insight Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC13_Newsroom_Insight_Test.robot">
+<test id="s1-s4-t1" name="Industry Test">
+<kw name="Open my browser" library="NewsroomPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:27:40.992" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:27:40.992" endtime="20220401 23:28:46.827"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:28:51.845" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:28:46.830" endtime="20220401 23:28:51.846"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:28:51.846" endtime="20220401 23:28:52.001"/>
+</kw>
+<status status="PASS" starttime="20220401 23:27:40.991" endtime="20220401 23:28:52.001"/>
+</kw>
+<kw name="Newsroom Insight" library="NewsroomPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:28:54.003" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:28:52.003" endtime="20220401 23:28:54.003"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${newsroom_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:28:54.006" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:28:54.004" endtime="20220401 23:28:54.075"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:28:56.089" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:28:54.075" endtime="20220401 23:28:56.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${insight_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:28:56.090" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[4]'.</msg>
+<msg timestamp="20220401 23:28:56.298" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220401 23:28:56.299" level="FAIL">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[4]' not found.</msg>
+<status status="FAIL" starttime="20220401 23:28:56.090" endtime="20220401 23:28:56.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:28:56.299" endtime="20220401 23:28:56.299"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_post_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:28:56.299" endtime="20220401 23:28:56.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:28:56.299" endtime="20220401 23:28:56.299"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_facebook_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220401 23:28:56.299" endtime="20220401 23:28:56.299"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:28:56.299" endtime="20220401 23:28:56.300"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:28:52.002" endtime="20220401 23:28:56.300"/>
+</kw>
+<kw name="Close my browser" library="NewsroomPage">
+<status status="NOT RUN" starttime="20220401 23:28:56.300" endtime="20220401 23:28:56.300"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:27:40.991" endtime="20220401 23:28:56.301">Element with locator 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[4]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220401 23:27:40.985" endtime="20220401 23:28:56.303"/>
+</suite>
+<suite id="s1-s5" name="TC14 SRC Overview Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC14_SRC_Overview_Test.robot">
+<test id="s1-s5-t1" name="Industry Test">
+<kw name="Open my browser" library="SrcPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:28:56.446" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:28:56.445" endtime="20220401 23:29:25.894"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:29:30.896" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:29:25.894" endtime="20220401 23:29:30.896"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:29:30.896" endtime="20220401 23:29:31.028"/>
+</kw>
+<status status="PASS" starttime="20220401 23:28:56.445" endtime="20220401 23:29:31.029"/>
+</kw>
+<kw name="Overview SRC" library="SrcPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:29:33.041" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:29:31.030" endtime="20220401 23:29:33.041"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${src_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:29:33.042" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[5]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:29:33.041" endtime="20220401 23:29:33.107"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:29:35.109" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:29:33.107" endtime="20220401 23:29:35.109"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${overview_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:29:35.111" level="INFO">Clicking element 'xpath:/html/body/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220401 23:29:35.109" endtime="20220401 23:29:35.183"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:29:37.194" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:29:35.183" endtime="20220401 23:29:37.194"/>
+</kw>
+<status status="PASS" starttime="20220401 23:29:31.029" endtime="20220401 23:29:37.194"/>
+</kw>
+<kw name="Close my browser" library="SrcPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:29:37.195" endtime="20220401 23:29:49.019"/>
+</kw>
+<status status="PASS" starttime="20220401 23:29:37.195" endtime="20220401 23:29:49.019"/>
+</kw>
+<status status="PASS" starttime="20220401 23:28:56.445" endtime="20220401 23:29:49.019"/>
+</test>
+<status status="PASS" starttime="20220401 23:28:56.305" endtime="20220401 23:29:49.019"/>
+</suite>
+<suite id="s1-s6" name="TC15 SRC Submit Vulnerability Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC15_SRC_Submit_Vulnerability_Test.robot">
+<test id="s1-s6-t1" name="Industry Test">
+<kw name="Open my browser" library="SrcPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:29:49.019" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:29:49.019" endtime="20220401 23:30:39.591"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:30:44.599" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:30:39.592" endtime="20220401 23:30:44.599"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:30:44.599" endtime="20220401 23:30:44.741"/>
+</kw>
+<status status="PASS" starttime="20220401 23:29:49.019" endtime="20220401 23:30:44.741"/>
+</kw>
+<kw name="Vulnerability SRC" library="SrcPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:30:46.750" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:30:44.742" endtime="20220401 23:30:46.750"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${src_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:30:46.750" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[5]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:30:46.750" endtime="20220401 23:30:46.791"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:30:48.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:30:46.791" endtime="20220401 23:30:48.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${vulnerability_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:30:48.818" level="INFO">Clicking element 'xpath:/html/body/ul/li[2]/a'.</msg>
+<msg timestamp="20220401 23:30:48.958" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-89.png"&gt;&lt;img src="selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220401 23:30:48.959" level="FAIL">Element with locator 'xpath:/html/body/ul/li[2]/a' not found.</msg>
+<status status="FAIL" starttime="20220401 23:30:48.818" endtime="20220401 23:30:48.959"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:30:48.959" endtime="20220401 23:30:48.959"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:30:44.742" endtime="20220401 23:30:48.959"/>
+</kw>
+<kw name="Close my browser" library="SrcPage">
+<status status="NOT RUN" starttime="20220401 23:30:48.960" endtime="20220401 23:30:48.960"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:29:49.019" endtime="20220401 23:30:48.961">Element with locator 'xpath:/html/body/ul/li[2]/a' not found.</status>
+</test>
+<status status="FAIL" starttime="20220401 23:29:49.019" endtime="20220401 23:30:48.962"/>
+</suite>
+<suite id="s1-s7" name="TC16 SRC Announcement Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC16_SRC_Announcement_Test.robot">
+<test id="s1-s7-t1" name="Industry Test">
+<kw name="Open my browser" library="SrcPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:30:48.971" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:30:48.971" endtime="20220401 23:30:59.601"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:04.602" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:30:59.601" endtime="20220401 23:31:04.602"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:31:04.602" endtime="20220401 23:31:04.728"/>
+</kw>
+<status status="PASS" starttime="20220401 23:30:48.971" endtime="20220401 23:31:04.729"/>
+</kw>
+<kw name="Announcement SRC" library="SrcPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:06.734" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:04.732" endtime="20220401 23:31:06.734"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${src_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:06.735" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[5]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:31:06.734" endtime="20220401 23:31:06.782"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:08.795" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:06.782" endtime="20220401 23:31:08.795"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${announcement_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:08.797" level="INFO">Clicking element 'xpath:/html/body/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220401 23:31:08.796" endtime="20220401 23:31:08.855"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:10.870" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:08.855" endtime="20220401 23:31:10.870"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${language_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:10.872" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[7]/span[2]'.</msg>
+<status status="PASS" starttime="20220401 23:31:10.871" endtime="20220401 23:31:11.024"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:13.039" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:11.025" endtime="20220401 23:31:13.039"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:04.730" endtime="20220401 23:31:13.039"/>
+</kw>
+<kw name="Close my browser" library="SrcPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:31:13.040" endtime="20220401 23:31:17.940"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:13.040" endtime="20220401 23:31:17.940"/>
+</kw>
+<status status="PASS" starttime="20220401 23:30:48.970" endtime="20220401 23:31:17.940"/>
+</test>
+<status status="PASS" starttime="20220401 23:30:48.964" endtime="20220401 23:31:17.940"/>
+</suite>
+<suite id="s1-s8" name="TC17 About Us Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC17_About_Us_Test.robot">
+<test id="s1-s8-t1" name="Industry Test">
+<kw name="Open my browser" library="AboutPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:31:18.144" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:31:18.144" endtime="20220401 23:31:29.727"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:34.737" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:29.727" endtime="20220401 23:31:34.737"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:31:34.738" endtime="20220401 23:31:34.864"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:18.144" endtime="20220401 23:31:34.864"/>
+</kw>
+<kw name="About Us" library="AboutPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:36.871" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:34.865" endtime="20220401 23:31:36.871"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:36.871" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[6]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:31:36.871" endtime="20220401 23:31:36.961"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:38.963" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:36.961" endtime="20220401 23:31:38.963"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_us_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:38.964" level="INFO">Clicking element 'xpath:/html/body/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220401 23:31:38.963" endtime="20220401 23:31:39.049"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:41.058" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:39.049" endtime="20220401 23:31:41.058"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:34.865" endtime="20220401 23:31:41.058"/>
+</kw>
+<kw name="Close my browser" library="AboutPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:31:41.059" endtime="20220401 23:31:43.716"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:41.059" endtime="20220401 23:31:43.716"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:18.144" endtime="20220401 23:31:43.716"/>
+</test>
+<status status="PASS" starttime="20220401 23:31:17.956" endtime="20220401 23:31:43.716"/>
+</suite>
+<suite id="s1-s9" name="TC18 Contact Us Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC18_Contact_Us_Test.robot">
+<test id="s1-s9-t1" name="Industry Test">
+<kw name="Open my browser" library="AboutPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:31:43.732" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:31:43.732" endtime="20220401 23:31:51.322"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:56.333" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:51.322" endtime="20220401 23:31:56.333"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:31:56.333" endtime="20220401 23:31:56.460"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:43.732" endtime="20220401 23:31:56.460"/>
+</kw>
+<kw name="Contact Us" library="AboutPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:31:58.470" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:56.461" endtime="20220401 23:31:58.470"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:31:58.470" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[6]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:31:58.470" endtime="20220401 23:31:58.515"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:00.523" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:31:58.515" endtime="20220401 23:32:00.523"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contact_us_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:32:00.525" level="INFO">Clicking element 'xpath:/html/body/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220401 23:32:00.524" endtime="20220401 23:32:00.605"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:02.619" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:00.605" endtime="20220401 23:32:02.619"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:56.461" endtime="20220401 23:32:02.620"/>
+</kw>
+<kw name="Close my browser" library="AboutPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:32:02.623" endtime="20220401 23:32:04.951"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:02.622" endtime="20220401 23:32:04.951"/>
+</kw>
+<status status="PASS" starttime="20220401 23:31:43.732" endtime="20220401 23:32:04.951"/>
+</test>
+<status status="PASS" starttime="20220401 23:31:43.716" endtime="20220401 23:32:04.958"/>
+</suite>
+<suite id="s1-s10" name="TC19 Join Us Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC19_Join_Us_Test.robot">
+<test id="s1-s10-t1" name="Industry Test">
+<kw name="Open my browser" library="AboutPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:32:04.967" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:32:04.967" endtime="20220401 23:32:13.157"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:18.171" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:13.157" endtime="20220401 23:32:18.171"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:32:18.171" endtime="20220401 23:32:18.309"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:04.967" endtime="20220401 23:32:18.309"/>
+</kw>
+<kw name="Join Us" library="AboutPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:20.320" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:18.313" endtime="20220401 23:32:20.320"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:32:20.321" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[6]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:32:20.320" endtime="20220401 23:32:20.366"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:22.377" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:20.366" endtime="20220401 23:32:22.378"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${join_us_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:32:22.380" level="INFO">Clicking element 'xpath:/html/body/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220401 23:32:22.378" endtime="20220401 23:32:22.468"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:24.483" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:22.468" endtime="20220401 23:32:24.483"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:18.311" endtime="20220401 23:32:24.483"/>
+</kw>
+<kw name="Close my browser" library="AboutPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:32:24.485" endtime="20220401 23:32:26.703"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:24.484" endtime="20220401 23:32:26.703"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:04.967" endtime="20220401 23:32:26.703"/>
+</test>
+<status status="PASS" starttime="20220401 23:32:04.958" endtime="20220401 23:32:26.703"/>
+</suite>
+<suite id="s1-s11" name="TC20 About Help Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC20_About_Help_Test.robot">
+<test id="s1-s11-t1" name="Industry Test">
+<kw name="Open my browser" library="AboutPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:32:26.719" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:32:26.719" endtime="20220401 23:32:35.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:40.727" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:35.712" endtime="20220401 23:32:40.727"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:32:40.727" endtime="20220401 23:32:40.865"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:26.719" endtime="20220401 23:32:40.865"/>
+</kw>
+<kw name="About Help" library="AboutPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:42.869" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:40.867" endtime="20220401 23:32:42.869"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:32:42.870" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[6]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:32:42.869" endtime="20220401 23:32:42.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:44.937" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:42.922" endtime="20220401 23:32:44.937"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_help_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:32:44.939" level="INFO">Clicking element 'xpath:/html/body/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:32:44.938" endtime="20220401 23:32:45.034"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:32:47.050" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:32:45.034" endtime="20220401 23:32:47.050"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:40.866" endtime="20220401 23:32:47.050"/>
+</kw>
+<kw name="Close my browser" library="AboutPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:32:47.051" endtime="20220401 23:32:50.187"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:47.050" endtime="20220401 23:32:50.187"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:26.719" endtime="20220401 23:32:50.187"/>
+</test>
+<status status="PASS" starttime="20220401 23:32:26.717" endtime="20220401 23:32:50.187"/>
+</suite>
+<suite id="s1-s12" name="TC2 Solution Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC2_Solution_Test.robot">
+<test id="s1-s12-t1" name="Solution Test">
+<kw name="Open my browser" library="BusinessPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:32:50.344" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:32:50.344" endtime="20220401 23:33:01.325"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:33:06.341" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:33:01.325" endtime="20220401 23:33:06.341"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:33:06.342" endtime="20220401 23:33:06.486"/>
+</kw>
+<status status="PASS" starttime="20220401 23:32:50.344" endtime="20220401 23:33:06.486"/>
+</kw>
+<kw name="Solution" library="BusinessPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:33:08.488" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:33:06.487" endtime="20220401 23:33:08.488"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_business_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:33:08.489" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[2]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:33:08.488" endtime="20220401 23:33:08.554"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:33:10.570" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:33:08.554" endtime="20220401 23:33:10.571"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_solution_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:33:10.572" level="INFO">Clicking element 'xpath:/html/body/ul/li[2]/a'.</msg>
+<msg timestamp="20220401 23:34:10.704" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=100.0.4896.60)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00429943+2595139]
+	Ordinal0 [0x003BC9F1+2148849]
+	Ordinal0 [0x002B4528+1066280]
+	Ordinal0 [0x002A5CC0+1006784]
+	Ordinal0 [0x002A4AD0+1002192]
+	Ordinal0 [0x002A50D8+1003736]
+	Ordinal0 [0x002BA5DA+1091034]
+	Ordinal0 [0x00315E92+1466002]
+	Ordinal0 [0x002FB9EC+1358316]
+	Ordinal0 [0x0030BAF2+1424114]
+	Ordinal0 [0x002FB806+1357830]
+	Ordinal0 [0x002D6086+1204358]
+	Ordinal0 [0x002D6F96+1208214]
+	GetHandleVerifier [0x005CB232+1658114]
+	GetHandleVerifier [0x0068312C+2411516]
+	GetHandleVerifier [0x004BF261+560433]
+	GetHandleVerifier [0x004BE366+556598]
+	Ordinal0 [0x003C286B+2173035]
+	Ordinal0 [0x003C75F8+2192888]
+	Ordinal0 [0x003C76E5+2193125]
+	Ordinal0 [0x003D11FC+2232828]
+	BaseThreadInitThunk [0x76076739+25]
+	RtlGetFullPathName_UEx [0x77038E7F+1215]
+	RtlGetFullPathName_UEx [0x77038E4D+1165]
+</msg>
+<msg timestamp="20220401 23:34:12.939" level="FAIL">ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=100.0.4896.60)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00429943+2595139]
+	Ordinal0 [0x003BC9F1+2148849]
+	Ordinal0 [0x002B4528+1066280]
+	Ordinal0 [0x002E236E+1254254]
+	Ordinal0 [0x002D7AB3+1211059]
+	Ordinal0 [0x002FB9EC+1358316]
+	Ordinal0 [0x002D7474+1209460]
+	Ordinal0 [0x002FBC04+1358852]
+	Ordinal0 [0x0030BAF2+1424114]
+	Ordinal0 [0x002FB806+1357830]
+	Ordinal0 [0x002D6086+1204358]
+	Ordinal0 [0x002D6F96+1208214]
+	GetHandleVerifier [0x005CB232+1658114]
+	GetHandleVerifier [0x0068312C+2411516]
+	GetHandleVerifier [0x004BF261+560433]
+	GetHandleVerifier [0x004BE366+556598]
+	Ordinal0 [0x003C286B+2173035]
+	Ordinal0 [0x003C75F8+2192888]
+	Ordinal0 [0x003C76E5+2193125]
+	Ordinal0 [0x003D11FC+2232828]
+	BaseThreadInitThunk [0x76076739+25]
+	RtlGetFullPathName_UEx [0x77038E7F+1215]
+	RtlGetFullPathName_UEx [0x77038E4D+1165]
+</msg>
+<status status="FAIL" starttime="20220401 23:33:10.571" endtime="20220401 23:34:12.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220401 23:34:12.941" endtime="20220401 23:34:12.941"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:33:06.487" endtime="20220401 23:34:12.943"/>
+</kw>
+<kw name="Close my browser" library="BusinessPage">
+<status status="NOT RUN" starttime="20220401 23:34:12.945" endtime="20220401 23:34:12.946"/>
+</kw>
+<status status="FAIL" starttime="20220401 23:32:50.344" endtime="20220401 23:34:12.947">ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=100.0.4896.60)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00429943+2595139]
+	Ordinal0 [0x003BC9F1+2148849]
+	Ordinal0 [0x002B4528+1066280]
+	Ordinal0 [0x002E236E+1254254]
+	Ordinal0 [0x002D7AB3+1211059]
+	Ordinal0 [0x002FB9EC+1358316]
+	Ordinal0 [0x002D7474+1209460]
+	Ordinal0 [0x002FBC04+1358852]
+	Ordinal0 [0x0030BAF2+1424114]
+	Ordinal0 [0x002FB806+1357830]
+	Ordinal0 [0x002D6086+1204358]
+	Ordinal0 [0x002D6F96+1208214]
+	GetHandleVerifier [0x005CB232+1658114]
+	GetHandleVerifier [0x0068312C+2411516]
+	GetHandleVerifier [0x004BF261+560433]
+	GetHandleVerifier [0x004BE366+556598]
+	Ordinal0 [0x003C286B+2173035]
+	Ordinal0 [0x003C75F8+2192888]
+	Ordinal0 [0x003C76E5+2193125]
+	Ordinal0 [0x003D11FC+2232828]
+	BaseThreadInitThunk [0x76076739+25]
+	RtlGetFullPathName_UEx [0x77038E7F+1215]
+	RtlGetFullPathName_UEx [0x77038E4D+1165]
+</status>
+</test>
+<status status="FAIL" starttime="20220401 23:32:50.203" endtime="20220401 23:34:12.957"/>
+</suite>
+<suite id="s1-s13" name="TC3 Success Stories" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC3_Success_Stories.robot">
+<test id="s1-s13-t1" name="Success Test">
+<kw name="Open my browser" library="BusinessPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:34:12.982" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:34:12.981" endtime="20220401 23:34:42.821"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:34:47.826" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:42.821" endtime="20220401 23:34:47.826"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:34:47.826" endtime="20220401 23:34:47.953"/>
+</kw>
+<status status="PASS" starttime="20220401 23:34:12.980" endtime="20220401 23:34:47.953"/>
+</kw>
+<kw name="Success Stories" library="BusinessPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:34:49.956" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:47.954" endtime="20220401 23:34:49.956"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_business_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:34:49.957" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[2]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:34:49.956" endtime="20220401 23:34:50.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:34:52.020" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:50.019" endtime="20220401 23:34:52.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_success_stories_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:34:52.021" level="INFO">Clicking element 'xpath:/html/body/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220401 23:34:52.021" endtime="20220401 23:34:52.093"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:34:54.107" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:52.093" endtime="20220401 23:34:54.107"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${region_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:34:54.108" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/div/div[2]/div[2]/form/div[1]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:34:54.107" endtime="20220401 23:34:54.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:34:58.188" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:54.179" endtime="20220401 23:34:58.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_region_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:34:58.189" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div[1]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220401 23:34:58.188" endtime="20220401 23:34:58.250"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:02.264" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:34:58.251" endtime="20220401 23:35:02.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${industry_success_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:02.266" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/div/div[2]/div[2]/form/div[2]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:35:02.265" endtime="20220401 23:35:02.337"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:06.344" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:02.337" endtime="20220401 23:35:06.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${industry_select}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:06.346" level="INFO">Clicking element 'xpath:/html/body/div[3]/div[1]/div[1]/ul/li[1]/span'.</msg>
+<status status="PASS" starttime="20220401 23:35:06.345" endtime="20220401 23:35:06.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:10.434" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:06.426" endtime="20220401 23:35:10.434"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${objective_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:10.434" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/form/div[3]/div/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:35:10.434" endtime="20220401 23:35:10.493"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:14.497" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:10.494" endtime="20220401 23:35:14.497"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${objective_select_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:14.498" level="INFO">Clicking element 'xpath:/html/body/div[4]/div[1]/div[1]/ul/li[1]/span'.</msg>
+<status status="PASS" starttime="20220401 23:35:14.497" endtime="20220401 23:35:14.571"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:18.579" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:14.571" endtime="20220401 23:35:18.580"/>
+</kw>
+<status status="PASS" starttime="20220401 23:34:47.954" endtime="20220401 23:35:18.580"/>
+</kw>
+<kw name="Close my browser" library="BusinessPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:35:18.584" endtime="20220401 23:35:24.924"/>
+</kw>
+<status status="PASS" starttime="20220401 23:35:18.582" endtime="20220401 23:35:24.924"/>
+</kw>
+<status status="PASS" starttime="20220401 23:34:12.979" endtime="20220401 23:35:24.924"/>
+</test>
+<status status="PASS" starttime="20220401 23:34:12.964" endtime="20220401 23:35:24.924"/>
+</suite>
+<suite id="s1-s14" name="TC4 Connect Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC4_Connect_Test.robot">
+<test id="s1-s14-t1" name="Solution Test">
+<kw name="Open my browser" library="BusinessPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:35:24.940" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:35:24.940" endtime="20220401 23:35:43.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:48.997" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:43.993" endtime="20220401 23:35:48.997"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:35:48.997" endtime="20220401 23:35:49.123"/>
+</kw>
+<status status="PASS" starttime="20220401 23:35:24.940" endtime="20220401 23:35:49.124"/>
+</kw>
+<kw name="Connect" library="BusinessPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:51.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:49.126" endtime="20220401 23:35:51.136"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_business_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:51.137" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[2]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:35:51.136" endtime="20220401 23:35:51.184"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:54.193" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:51.184" endtime="20220401 23:35:54.193"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_content_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:54.193" level="INFO">Clicking element 'xpath:/html/body/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:35:54.193" endtime="20220401 23:35:54.249"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:35:57.265" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:54.249" endtime="20220401 23:35:57.265"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name_xpath}</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:35:57.267" level="INFO">Typing text 'momtaz' into text field 'xpath:/html/body/div/div/div/div/div[2]/div[2]/div[2]/form/div[1]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220401 23:35:57.266" endtime="20220401 23:35:57.486"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:00.487" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:35:57.486" endtime="20220401 23:36:00.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name_xpath}</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:00.490" level="INFO">Typing text 'rasel' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[2]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:00.488" endtime="20220401 23:36:00.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:03.672" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:00.665" endtime="20220401 23:36:03.672"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_country_code}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:03.672" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[3]/div/div/div/div/div/span/span/i'.</msg>
+<status status="PASS" starttime="20220401 23:36:03.672" endtime="20220401 23:36:03.797"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:06.799" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:03.797" endtime="20220401 23:36:06.799"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_bd_code }</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:06.801" level="INFO">Clicking element 'xpath:/html/body/div[2]/div[1]/div[1]/ul/li[184]'.</msg>
+<status status="PASS" starttime="20220401 23:36:06.800" endtime="20220401 23:36:06.888"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:09.889" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:06.888" endtime="20220401 23:36:09.889"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mobile_no_xpath}</arg>
+<arg>${mobile_no}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:09.892" level="INFO">Typing text '01885931983' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[3]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:09.891" endtime="20220401 23:36:10.119"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:13.125" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:10.120" endtime="20220401 23:36:13.125"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_xpath}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:13.126" level="INFO">Typing text 'momtazrasel8@gmail.com' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[4]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:13.125" endtime="20220401 23:36:13.505"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:16.513" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:13.505" endtime="20220401 23:36:16.513"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${company_xpath}</arg>
+<arg>${company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:16.514" level="INFO">Typing text 'QUPS' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[5]/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:16.513" endtime="20220401 23:36:16.659"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:19.671" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:16.659" endtime="20220401 23:36:19.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${job_title_xpath}</arg>
+<arg>${job_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:19.671" level="INFO">Typing text 'SQA Engineer' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[6]/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:19.671" endtime="20220401 23:36:19.882"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:22.889" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:19.883" endtime="20220401 23:36:22.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${industry_select_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:22.890" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[7]/div/div/div/span/span/i'.</msg>
+<status status="PASS" starttime="20220401 23:36:22.889" endtime="20220401 23:36:22.945"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:25.961" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:22.945" endtime="20220401 23:36:25.961"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_industry_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:25.962" level="INFO">Clicking element 'xpath:/html/body/div[3]/div[1]/div[1]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220401 23:36:25.961" endtime="20220401 23:36:26.048"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:29.062" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:26.048" endtime="20220401 23:36:29.062"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_company_region}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:29.064" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[8]/div/div/div[1]/span/span/i'.</msg>
+<status status="PASS" starttime="20220401 23:36:29.063" endtime="20220401 23:36:29.151"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:32.164" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:29.151" endtime="20220401 23:36:32.164"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${company_region_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:32.166" level="INFO">Clicking element 'xpath:/html/body/div[4]/div[1]/div[1]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220401 23:36:32.165" endtime="20220401 23:36:32.238"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:35.240" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:32.238" endtime="20220401 23:36:35.241"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${message_xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:35.242" level="INFO">Typing text 'Hello QUPS family' into text field 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/div[9]/div/div/input'.</msg>
+<status status="PASS" starttime="20220401 23:36:35.241" endtime="20220401 23:36:35.583"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:38.586" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:35.584" endtime="20220401 23:36:38.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${submit_button_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:36:38.588" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[2]/div[2]/div[2]/form/button'.</msg>
+<status status="PASS" starttime="20220401 23:36:38.587" endtime="20220401 23:36:38.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:36:41.661" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:38.658" endtime="20220401 23:36:41.661"/>
+</kw>
+<status status="PASS" starttime="20220401 23:35:49.125" endtime="20220401 23:36:41.661"/>
+</kw>
+<kw name="Close my browser" library="BusinessPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:36:41.665" endtime="20220401 23:36:44.879"/>
+</kw>
+<status status="PASS" starttime="20220401 23:36:41.664" endtime="20220401 23:36:44.879"/>
+</kw>
+<status status="PASS" starttime="20220401 23:35:24.940" endtime="20220401 23:36:44.879"/>
+</test>
+<status status="PASS" starttime="20220401 23:35:24.939" endtime="20220401 23:36:44.879"/>
+</suite>
+<suite id="s1-s15" name="TC5 Shareit Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC5_Shareit_Test.robot">
+<test id="s1-s15-t1" name="Solution Test">
+<kw name="Open my browser" library="ProductPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:36:45.099" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:36:45.099" endtime="20220401 23:36:57.086"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:02.090" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:36:57.086" endtime="20220401 23:37:02.090"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:37:02.091" endtime="20220401 23:37:02.236"/>
+</kw>
+<status status="PASS" starttime="20220401 23:36:45.099" endtime="20220401 23:37:02.237"/>
+</kw>
+<kw name="Share It" library="ProductPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:04.244" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:02.240" endtime="20220401 23:37:04.244"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_product_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:04.244" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[3]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:37:04.244" endtime="20220401 23:37:04.289"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:06.293" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:04.289" endtime="20220401 23:37:06.293"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${share_it_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:06.293" level="INFO">Clicking element 'xpath:/html/body/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220401 23:37:06.293" endtime="20220401 23:37:06.349"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:08.356" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:06.349" endtime="20220401 23:37:08.356"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${android_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:08.356" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/div/div[1]/div/div[2]/div[1]/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20220401 23:37:08.356" endtime="20220401 23:37:08.450"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:10.463" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:08.450" endtime="20220401 23:37:10.463"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:02.238" endtime="20220401 23:37:10.463"/>
+</kw>
+<kw name="Close my browser" library="ProductPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:37:10.464" endtime="20220401 23:37:12.783"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:10.464" endtime="20220401 23:37:12.783"/>
+</kw>
+<status status="PASS" starttime="20220401 23:36:45.099" endtime="20220401 23:37:12.783"/>
+</test>
+<status status="PASS" starttime="20220401 23:36:44.879" endtime="20220401 23:37:12.783"/>
+</suite>
+<suite id="s1-s16" name="TC6 Cloneit Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC6_Cloneit_Test.robot">
+<test id="s1-s16-t1" name="Solution Test">
+<kw name="Open my browser" library="ProductPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:37:12.783" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:37:12.783" endtime="20220401 23:37:23.077"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:28.089" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:23.077" endtime="20220401 23:37:28.089"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:37:28.089" endtime="20220401 23:37:28.224"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:12.783" endtime="20220401 23:37:28.224"/>
+</kw>
+<kw name="Clone It" library="ProductPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:30.239" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:28.225" endtime="20220401 23:37:30.239"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_product_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:30.240" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[3]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:37:30.239" endtime="20220401 23:37:30.284"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:32.297" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:30.285" endtime="20220401 23:37:32.297"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clone_it_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:32.298" level="INFO">Clicking element 'xpath:/html/body/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220401 23:37:32.298" endtime="20220401 23:37:32.374"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:34.375" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:32.374" endtime="20220401 23:37:34.375"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:28.225" endtime="20220401 23:37:34.376"/>
+</kw>
+<kw name="Close my browser" library="ProductPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:37:34.379" endtime="20220401 23:37:37.464"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:34.377" endtime="20220401 23:37:37.464"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:12.783" endtime="20220401 23:37:37.464"/>
+</test>
+<status status="PASS" starttime="20220401 23:37:12.783" endtime="20220401 23:37:37.464"/>
+</suite>
+<suite id="s1-s17" name="TC7 Lockit Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC7_Lockit_Test.robot">
+<test id="s1-s17-t1" name="LockIt Test">
+<kw name="Open my browser" library="ProductPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:37:37.479" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:37:37.464" endtime="20220401 23:37:44.886"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:49.896" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:44.886" endtime="20220401 23:37:49.896"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:37:49.896" endtime="20220401 23:37:50.025"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:37.464" endtime="20220401 23:37:50.025"/>
+</kw>
+<kw name="Lock It" library="ProductPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:52.032" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:50.026" endtime="20220401 23:37:52.032"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_product_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:52.032" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[3]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:37:52.032" endtime="20220401 23:37:52.083"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:54.098" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:52.084" endtime="20220401 23:37:54.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${lock_it_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:37:54.101" level="INFO">Clicking element 'xpath:/html/body/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20220401 23:37:54.099" endtime="20220401 23:37:54.173"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:37:57.173" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:37:54.173" endtime="20220401 23:37:57.173"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:50.026" endtime="20220401 23:37:57.173"/>
+</kw>
+<kw name="Close my browser" library="ProductPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:37:57.173" endtime="20220401 23:37:59.429"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:57.173" endtime="20220401 23:37:59.429"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:37.464" endtime="20220401 23:37:59.429"/>
+</test>
+<status status="PASS" starttime="20220401 23:37:37.464" endtime="20220401 23:37:59.436"/>
+</suite>
+<suite id="s1-s18" name="TC8 Listeit Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC8_Listeit_Test.robot">
+<test id="s1-s18-t1" name="ListenIt Test">
+<kw name="Open my browser" library="ProductPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:37:59.445" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:37:59.445" endtime="20220401 23:38:08.178"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:13.179" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:08.178" endtime="20220401 23:38:13.179"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:38:13.179" endtime="20220401 23:38:13.303"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:59.445" endtime="20220401 23:38:13.304"/>
+</kw>
+<kw name="Listen It" library="ProductPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:15.305" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:13.305" endtime="20220401 23:38:15.305"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_product_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:38:15.305" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[3]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:38:15.305" endtime="20220401 23:38:15.372"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:17.381" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:15.372" endtime="20220401 23:38:17.381"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${listen_it_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:38:17.382" level="INFO">Clicking element 'xpath:/html/body/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20220401 23:38:17.381" endtime="20220401 23:38:17.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:20.491" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:17.475" endtime="20220401 23:38:20.491"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:13.304" endtime="20220401 23:38:20.491"/>
+</kw>
+<kw name="Close my browser" library="ProductPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:38:20.491" endtime="20220401 23:38:24.600"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:20.491" endtime="20220401 23:38:24.600"/>
+</kw>
+<status status="PASS" starttime="20220401 23:37:59.445" endtime="20220401 23:38:24.600"/>
+</test>
+<status status="PASS" starttime="20220401 23:37:59.445" endtime="20220401 23:38:24.600"/>
+</suite>
+<suite id="s1-s19" name="TC9 Cleanit Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\TC9_Cleanit_Test.robot">
+<test id="s1-s19-t1" name="ListenIt Test">
+<kw name="Open my browser" library="ProductPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:38:24.613" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:38:24.613" endtime="20220401 23:38:37.020"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:42.025" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:37.020" endtime="20220401 23:38:42.025"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:38:42.025" endtime="20220401 23:38:42.162"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:24.613" endtime="20220401 23:38:42.163"/>
+</kw>
+<kw name="Clean It" library="ProductPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:44.179" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:42.164" endtime="20220401 23:38:44.179"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_product_option}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:38:44.180" level="INFO">Clicking element 'xpath://*[@id='__layout']/div/header/ul/li[3]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:38:44.179" endtime="20220401 23:38:44.224"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:46.239" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:44.224" endtime="20220401 23:38:46.240"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clean_it_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:38:46.242" level="INFO">Clicking element 'xpath:/html/body/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20220401 23:38:46.240" endtime="20220401 23:38:46.343"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:38:49.348" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220401 23:38:46.343" endtime="20220401 23:38:49.348"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:42.163" endtime="20220401 23:38:49.348"/>
+</kw>
+<kw name="Close my browser" library="ProductPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:38:49.349" endtime="20220401 23:38:51.635"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:49.349" endtime="20220401 23:38:51.635"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:24.613" endtime="20220401 23:38:51.635"/>
+</test>
+<status status="PASS" starttime="20220401 23:38:24.600" endtime="20220401 23:38:51.635"/>
+</suite>
+<suite id="s1-s20" name="test 1 Business Test" source="C:\Users\RASEL\PycharmProjects\Share-It-Web-Robot-Framework\test_cases\test_1_Business_Test.robot">
+<test id="s1-s20-t1" name="Business Test">
+<kw name="Open my browser" library="BusinessPage">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Siteurl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220401 23:38:51.635" level="INFO">Opening browser 'chrome' to base url 'https://www.ushareit.com/'.</msg>
+<status status="PASS" starttime="20220401 23:38:51.635" endtime="20220401 23:39:02.590"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:39:07.597" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220401 23:39:02.590" endtime="20220401 23:39:07.597"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220401 23:39:07.597" endtime="20220401 23:39:07.738"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:51.635" endtime="20220401 23:39:07.739"/>
+</kw>
+<kw name="Business" library="BusinessPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:39:09.755" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:39:07.740" endtime="20220401 23:39:09.755"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_business_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:39:09.756" level="INFO">Clicking element 'xpath:/html/body/div/div/div/header/ul/li[2]/div/span'.</msg>
+<status status="PASS" starttime="20220401 23:39:09.755" endtime="20220401 23:39:09.802"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:39:11.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:39:09.802" endtime="20220401 23:39:11.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_overview_xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220401 23:39:11.820" level="INFO">Clicking element 'xpath:/html/body/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220401 23:39:11.819" endtime="20220401 23:39:11.887"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220401 23:39:13.900" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220401 23:39:11.887" endtime="20220401 23:39:13.901"/>
+</kw>
+<status status="PASS" starttime="20220401 23:39:07.739" endtime="20220401 23:39:13.901"/>
+</kw>
+<kw name="Close my browser" library="BusinessPage">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220401 23:39:13.903" endtime="20220401 23:39:17.334"/>
+</kw>
+<status status="PASS" starttime="20220401 23:39:13.902" endtime="20220401 23:39:17.334"/>
+</kw>
+<status status="PASS" starttime="20220401 23:38:51.635" endtime="20220401 23:39:17.334"/>
+</test>
+<status status="PASS" starttime="20220401 23:38:51.635" endtime="20220401 23:39:17.334"/>
+</suite>
+<status status="FAIL" starttime="20220401 23:25:42.822" endtime="20220401 23:39:17.334"/>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="14" fail="6" skip="0" id="s1" name="Test Cases">Test Cases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC10 Newsroom All Test">Test Cases.TC10 Newsroom All Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="TC11 Newsroom Company">Test Cases.TC11 Newsroom Company</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="TC12 Newsroom Industry">Test Cases.TC12 Newsroom Industry</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s4" name="TC13 Newsroom Insight Test">Test Cases.TC13 Newsroom Insight Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="TC14 SRC Overview Test">Test Cases.TC14 SRC Overview Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s6" name="TC15 SRC Submit Vulnerability Test">Test Cases.TC15 SRC Submit Vulnerability Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s7" name="TC16 SRC Announcement Test">Test Cases.TC16 SRC Announcement Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s8" name="TC17 About Us Test">Test Cases.TC17 About Us Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s9" name="TC18 Contact Us Test">Test Cases.TC18 Contact Us Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s10" name="TC19 Join Us Test">Test Cases.TC19 Join Us Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s11" name="TC20 About Help Test">Test Cases.TC20 About Help Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s12" name="TC2 Solution Test">Test Cases.TC2 Solution Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s13" name="TC3 Success Stories">Test Cases.TC3 Success Stories</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s14" name="TC4 Connect Test">Test Cases.TC4 Connect Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s15" name="TC5 Shareit Test">Test Cases.TC5 Shareit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s16" name="TC6 Cloneit Test">Test Cases.TC6 Cloneit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s17" name="TC7 Lockit Test">Test Cases.TC7 Lockit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s18" name="TC8 Listeit Test">Test Cases.TC8 Listeit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s19" name="TC9 Cleanit Test">Test Cases.TC9 Cleanit Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s20" name="test 1 Business Test">Test Cases.test 1 Business Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220401 23:34:10.704" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
+  (Session info: chrome=100.0.4896.60)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00429943+2595139]
+	Ordinal0 [0x003BC9F1+2148849]
+	Ordinal0 [0x002B4528+1066280]
+	Ordinal0 [0x002A5CC0+1006784]
+	Ordinal0 [0x002A4AD0+1002192]
+	Ordinal0 [0x002A50D8+1003736]
+	Ordinal0 [0x002BA5DA+1091034]
+	Ordinal0 [0x00315E92+1466002]
+	Ordinal0 [0x002FB9EC+1358316]
+	Ordinal0 [0x0030BAF2+1424114]
+	Ordinal0 [0x002FB806+1357830]
+	Ordinal0 [0x002D6086+1204358]
+	Ordinal0 [0x002D6F96+1208214]
+	GetHandleVerifier [0x005CB232+1658114]
+	GetHandleVerifier [0x0068312C+2411516]
+	GetHandleVerifier [0x004BF261+560433]
+	GetHandleVerifier [0x004BE366+556598]
+	Ordinal0 [0x003C286B+2173035]
+	Ordinal0 [0x003C75F8+2192888]
+	Ordinal0 [0x003C76E5+2193125]
+	Ordinal0 [0x003D11FC+2232828]
+	BaseThreadInitThunk [0x76076739+25]
+	RtlGetFullPathName_UEx [0x77038E7F+1215]
+	RtlGetFullPathName_UEx [0x77038E4D+1165]
+</msg>
+</errors>
+</robot>
